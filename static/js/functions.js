@@ -1,12 +1,12 @@
 // Set your publishable key: remember to change this to your live publishable key in production
 // See your keys here: https://dashboard.stripe.com/account/apikeys
-var stripe //= Stripe('pk_test_51HuHfCIbY8JtcKY7jShQWboVEXHwOg7MbAgey5cSn6DUTM3zpiv48NjX19rcgGDpbBdvLJ4g3zi79QJpMNFSTEdg008jUkrkaN');
+var stripe
 var orderData = {
     items: [{ id: "sample-good" }],
     currency: "usd"
   };
   
-fetch("/create-payment-intent", {
+fetch("http://localhost:3000/create-payment-intent", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -17,7 +17,6 @@ fetch("/create-payment-intent", {
       return result.json();
     })
     .then(function(data) {
-      console.log(data)
       return setupElements(data);
     })
     .then(function({ stripe, card, clientSecret }) {
@@ -34,7 +33,6 @@ fetch("/create-payment-intent", {
   
   // Set up Stripe.js and Elements to use in checkout form
   var setupElements = function(data) {
-    console.log(data)
     stripe = Stripe(data.publishable_key);
     var elements = stripe.elements();
     var style = {
