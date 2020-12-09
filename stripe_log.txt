@@ -1,0 +1,42 @@
+2020/12/09 15:03:31 Application Started
+2020/12/09 15:03:37 In create payment handler
+2020/12/09 15:03:37 Added Payment Metadata
+2020/12/09 15:03:37 Successfully created paymentIntent : pi_1Hwbh7IbY8JtcKY7ZLEfL458
+2020/12/09 15:03:38 Success with payment created event. Submit with card details to make a charge. pi_1Hwbh7IbY8JtcKY7ZLEfL458
+2020/12/09 15:04:01 Something Unexpected happenedpayment_intent.requires_action
+2020/12/09 15:05:11 Success with payment succeeded event L pi_1Hwbh7IbY8JtcKY7ZLEfL458
+2020/12/09 15:05:12 This is a charge suceeded webhook
+2020/12/09 15:05:14 In create payment handler
+2020/12/09 15:05:14 Added Payment Metadata
+2020/12/09 15:05:14 Successfully created paymentIntent : pi_1HwbigIbY8JtcKY7cBBQZPuT
+2020/12/09 15:05:15 Success with payment created event. Submit with card details to make a charge. pi_1HwbigIbY8JtcKY7cBBQZPuT
+2020/12/09 15:05:36 Something Unexpected happenedpayment_intent.requires_action
+2020/12/09 15:06:03 Something Unexpected happenedpayment_intent.payment_failed
+2020/12/09 15:07:16 Application Started
+2020/12/09 15:07:24 In create payment handler
+2020/12/09 15:07:24 Added Payment Metadata
+2020/12/09 15:07:25 Successfully created paymentIntent : pi_1HwbkmIbY8JtcKY70mGYOTZT
+2020/12/09 15:07:27 Success with payment created event. Submit with card details to make a charge. pi_1HwbkmIbY8JtcKY70mGYOTZT
+2020/12/09 15:07:41 Complete authorization to proceed.
+2020/12/09 15:07:58 Success with payment failed event pi_1HwbkmIbY8JtcKY70mGYOTZT
+2020/12/09 15:08:36 Application Started
+2020/12/09 15:08:39 In create payment handler
+2020/12/09 15:08:39 Added Payment Metadata
+2020/12/09 15:08:40 Successfully created paymentIntent : pi_1Hwbm0IbY8JtcKY7iP9pfCdX
+2020/12/09 15:08:40 Success with payment created event. Submit with card details to make a charge. pi_1Hwbm0IbY8JtcKY7iP9pfCdX
+2020/12/09 15:09:00 Complete authorization to proceed.
+2020/12/09 15:09:13 Failure with payment failed event pi_1Hwbm0IbY8JtcKY7iP9pfCdX
+2020/12/09 15:09:19 Complete authorization to proceed.
+2020/12/09 15:09:25 Success with payment succeeded event pi_1Hwbm0IbY8JtcKY7iP9pfCdX
+2020/12/09 15:09:26 This is a charge suceeded webhook
+2020/12/09 15:09:37 In create payment handler
+2020/12/09 15:09:37 Added Payment Metadata
+2020/12/09 15:09:37 Successfully created paymentIntent : pi_1HwbmvIbY8JtcKY7u50pcOcK
+2020/12/09 15:09:38 Success with payment created event. Submit with card details to make a charge. pi_1HwbmvIbY8JtcKY7u50pcOcK
+2020/12/09 15:10:49 Success with payment succeeded event pi_1HwbmvIbY8JtcKY7u50pcOcK
+2020/12/09 15:10:50 This is a charge suceeded webhook
+2020/12/09 15:14:14 Application Started
+2020/12/09 15:14:46 In create payment handler
+2020/12/09 15:14:46 Added Payment Metadata
+2020/12/09 15:14:47 Successfully created paymentIntent : pi_1HwbrvIbY8JtcKY7Vdp7bRq8
+2020/12/09 15:14:47 Success with payment created event. Submit with card details to make a charge. pi_1HwbrvIbY8JtcKY7Vdp7bRq8
