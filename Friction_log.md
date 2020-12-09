@@ -5,7 +5,9 @@
 * I could submit an intent to charge, send the details of the card with the client_secret and submit a charge from the middleware in about 30 mins total. 
 * The prototyping process held up pretty well for me even through non contiguous time spent. I had to switch and return back to this task. But the documentation really helped me proceed smoothly. 
 * The tests ran and helped me uncover all the testing that should be done such as additional authorizations.
+![tests](https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/tested.png)
 * The webhooks worked beautifully to show that event processing happens and helps imagine the possibilities.
+![hook events](https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/post_events.png)
 
 
 ## What could be better
@@ -20,6 +22,7 @@
 * Presenting a simple piece of client code would have been easier for me. To try out the flow, we just need to present a simple client. The image of an attractive looking client on the page without any code was a surprise. Then i found a github link to go get the client side code made me realize that the client side code was not available on the property itself. By this time i had too many stripe documentation tabs open. 
 
 * On clicking the link, the very first step took me to a github project. The Github link goes to Stripe's general home page on Github rather than the intended file or directory. I had to spend a few minutes orienting myself on where I wanted to go. Finally I navigated to the correct project and found a client folder and went into it to find the HTML or react code. I thought this portion, significantly affected my onboarding experience of the APIs because I had only a 20 min window available before I had to go to some other meeting. 
+!(https://github.com/stripe-samples)[https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/Github_Generic.png]
 
 * Using the correct keys, I realized there is a logged in and a non logged in experience when I hovered over the key where a popover indicated, that the documentation would be customized with my own keys. So I set out to create an account. I wonder aloud if getting my keys could be a step of its own. 
 
@@ -31,18 +34,18 @@
 
 * Could not comprehend the pairing phrase when adding stripe CLI. I suppose it's a better log in experience. I compare this to heroku CLI and I can see how that required me to do login at the CLI itself. I reckon the pairing phrase is simply like a textual QR code to establish session?
 
-Recommendations
- - The documentation is the UX for API products. So obsesss about how the archetype dev uses it. As a PM, I would even do a user study to see how they onboard. Presenting options is nice but being opinionated is also good. 
+* The right hand side deep links in the documentation was very useful to jump sections in the page.
 
-  - Help users navigate what APIs they need for what kind of product they are building. Twilio has improved in this regard a great deal. They have a logged in experience which clearly helps users navigate its sprawling APIs. Some of them overlap. They have done clever branding around APIs to help the user pick the right APIs for the right task.
+## Recommendations
+ * The documentation is the UX for API products. So obsesss about how the archetype dev uses it. As a PM, I would even do a user study to see how they onboard. Presenting options is nice but being opinionated is also good. 
 
- - Improve Client Side documentation for the onboarding experience could be more self contained inside the onboarding page.
+ * Help users navigate what APIs they need for what kind of product they are building. Twilio has improved in this regard a great deal. They have a logged in experience which clearly helps users navigate its sprawling APIs. Some of them overlap. They have done clever branding around APIs to help the user pick the right APIs for the right task.
 
- - Notification when payment success from the Stripe Dashboard. However this may not be loved by all devs. Should validate and then decide if this is a good idea to enable it in test mode while prototyping.   
+ *  Improve Client Side documentation for the onboarding experience could be more self contained inside the onboarding page.
 
- - Need to have "What's Next" kind of guidance in the documentation.
+ *  Notification when payment success from the Stripe Dashboard. However this may not be loved by all devs. Should validate and then decide if this is a good idea to enable it in test mode while prototyping.   
  
- - A community of developers help each other. Establish a store front say via a slack channel to answer questions.
+ * A community of developers help each other. Establish a store front say via a slack channel to answer questions.
  
 
 
