@@ -26,7 +26,7 @@
 <img src="https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/rolling_log.png?raw=true" alt="tests" width="500"/>
 
 * Complete environment looked like this.
-<img src="https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/home.png?raw=true" alt="tests" width="500"/>
+<img src="https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/dev_setup.png?raw=true" alt="tests" width="500"/>
 
 
 ## What could be better
@@ -40,8 +40,9 @@
 * Presenting a simple piece of client code would have been easier for me.  The image of an attractive looking client on the page without any code was a surprise. Then I found a github link to go get the client side code made me realize that the client side code was not available on the property itself. By this time I had too many stripe documentation tabs open. 
 
 
-* On clicking the github link, the very first step took me to a github project. The Github link goes to Stripe's general home page on Github rather than the intended file or directory. I had to spend a few seconds orienting myself on where I wanted to go. Finally I navigated to the correct project and found a client folder and went into it to find the HTML or react code. I thought this portion, significantly affected my onboarding experience of the APIs due to the number of clicks involved.
-<img src="https://github.com/stripe-samples)[https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/Github_Generic.png?raw=true" alt="github link" width="500"/>
+* On clicking the github [link](https://github.com/stripe-samples) the very first step took me to a github project. The Github link goes to Stripe's general home page on Github rather than the intended file or directory. I had to spend a few seconds orienting myself on where I wanted to go. Finally I navigated to the correct project and found a client folder and went into it to find the HTML or react code. I thought this portion, significantly affected my onboarding experience of the APIs due to the number of clicks involved. I was painfully aware that this was all pre-setup to explore the APIs and clicking around looking for client code.
+<img src="https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/Github_Generic.png?raw=true" alt="github link" width="500"/>
+
 
 * Using the correct keys, I realized there is a logged in and a non-logged in experience when I hovered over the key where a popover indicated, that the documentation would be customized with my own keys. So I set out to create an account. I wondered aloud if getting my keys could be a step of its own. 
 
@@ -51,23 +52,28 @@
 
 * Everything ran finally, I got a payment success and I was able to make a charge. I could see it on my dashboard. I thought the Next Steps section could have used some improvements in recommendations.
 
-
-
 * Could not comprehend the pairing phrase when adding stripe CLI. I suppose it's a better log in experience. I compare this to heroku CLI and I can see how that required me to do login at the CLI itself. I reckon the pairing phrase is simply like a textual QR code to establish session?
 
 * The right hand side deep links in the documentation was very useful to jump sections in the page.
 
-## Recommendations
- * The documentation is the UX for API products. So obsesss about how the archetype dev uses it. As a PM, I would even do a user study to see how they onboard. Presenting options is nice but being opinionated is also good. 
+## General Recommendations
+ * The documentation is the UX for Payment Intent APIs. So improve navigation and present multiple paths to exploring in a streamlined manner (with recommended paths).  
 
- * Help users navigate what APIs they need for what kind of product they are building. Twilio has improved in this regard a great deal. They have a logged in experience which clearly helps users navigate its sprawling APIs. Some of them overlap. They have done clever branding around APIs to help the user pick the right APIs for the right task.
+ * Help users navigate what APIs they need for what kind of product they are building. How would I know that Payment Intent APIs is my first stop? Twilio has improved in this regard a great deal. They have a logged in experience which clearly helps users navigate its sprawling APIs. They have done clever branding around APIs with naming to help the user pick the right APIs for the right task.
 
- *  Improve Client Side documentation for the onboarding experience could be more self contained inside the onboarding page.
+ *  Improve Client Side documentation for the onboarding experience could be more self contained inside the onboarding page. To explore Payment Intent APIs we don't need too many types of client options.
 
  *  Notification when payment success from the Stripe Dashboard. However this may not be loved by all devs. Should validate and then decide if this is a good idea to enable it in test mode while prototyping.   
  
  * A community of developers help each other. Establish a store front say via a slack channel to answer questions.
  
+## Payment Intent API Recommendations
+* Full Application that can run for the user would be helpful. 
+* I liked that the intent is created upon load of the checkout page. So a handler to get the client_secret immediately.
+* Add expire token and cancel token APIs with corresponding webhooks for these operations,  if not already available (in case i missed this).
+* Allow user to configure settings for advanced usage. Eg. Only a single operation with a give token or with retry option. Eg. usecase is a fill or kill ordering system in trading context. Add capability to auto generate new token say after n amount of retries. Make the API behaviour configurable.
+* A language specific SDK should do more than wrap the rest API in that language. 
+* Offer a Stripe Enterprise Token Server for enterprise customers. It's a server they can throw in and automatically configure, manage, monitor, audit payment intents created for their needs. This could be a SAAS service hosted in their cloud. 
 
 
 
