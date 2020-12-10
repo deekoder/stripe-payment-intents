@@ -19,5 +19,5 @@
 * Enter various Test Cards. Test cards are available [here](https://stripe.com/docs/testing).
 
 # Friction Log
-* [The Friction Log](./Friction_Log.md)
+* [The Friction Log](https://github.com/deekoder/stripe-payment-intents/blob/master/Friction_log.md)
 
