@@ -3,13 +3,14 @@
  * Install Stripe CLI. If you need this install it from [here](https://stripe.com/docs/stripe-cli).
 
 # Running the Server
-`go run server.go`
+* Get the source code by doing `git clone git@github.com:deekoder/stripe-payment-intents.git`
+* In the stripe-payment-intents directory type `go run server.go`to start the middleware.
 
-# Stripe CLI 
+# Stripe CLI for WebHooks
 `stripe login` complete the login on your browser.
-` stripe listen --forward-to http://localhost:3000/webhook` to observe events from the go server running at localhost:3000
+`stripe listen --forward-to http://localhost:3000/webhook` to observe events from the go server running at localhost:3000
  
-# Accessing the Site
+# Accessing the Site on a Browser
 
 * Visit http://localhost:3000. You should see this below.
 
