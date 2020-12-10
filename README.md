@@ -7,8 +7,8 @@
 * In the stripe-payment-intents directory type `go run server.go`to start the middleware.
 
 # Stripe CLI for WebHooks
-`stripe login` complete the login on your browser.
-`stripe listen --forward-to http://localhost:3000/webhook` to observe events from the go server running at localhost:3000
+* `stripe login` complete the login on your browser.
+* `stripe listen --forward-to http://localhost:3000/webhook` to observe events from the go server running at localhost:3000
  
 # Accessing the Site on a Browser
 
