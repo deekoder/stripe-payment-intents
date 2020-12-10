@@ -11,21 +11,22 @@
 
 * The tests ran and helped me uncover all the testing that should be done such as additional authorizations.
 
-![](./static/screenshots/tested.png =200x200)
+<img src="https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/tested.png?raw=true" alt="tests" width="500"/>
+
 
 
 * I performed some additional tests with international cards and expired tokens
-![moretests](https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/detected_expired_key.png =200x200)
+<img src="https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/detected_expired_key.png?raw=true" alt="tests" width="500"/>
 
 
 * The webhooks worked beautifully to show that event processing happens and helps imagine the possibilities.I used this to discover all the event types and understand the API better.
-![hook events](https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/post_events.png =200x200)
+<img src="https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/post_events.png?raw=true" alt="tests" width="500"/>
 
 * The log file setup and the webhooks together aided discovery of the Payment Intent APIs further.I ended up enhancing the webhook handler further.
-![log](https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/rolling_log.png =200x200)
+<img src="https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/rolling_log.png?raw=true" alt="tests" width="500"/>
 
 * Complete environment looked like this.
-![env](https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/home.png =200x200)
+<img src="https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/home.png?raw=true" alt="tests" width="500"/>
 
 
 ## What could be better
@@ -40,7 +41,7 @@
 
 
 * On clicking the github link, the very first step took me to a github project. The Github link goes to Stripe's general home page on Github rather than the intended file or directory. I had to spend a few seconds orienting myself on where I wanted to go. Finally I navigated to the correct project and found a client folder and went into it to find the HTML or react code. I thought this portion, significantly affected my onboarding experience of the APIs due to the number of clicks involved.
-![](https://github.com/stripe-samples)[https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/Github_Generic.png =200x200]
+<img src="https://github.com/stripe-samples)[https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/Github_Generic.png?raw=true" alt="github link" width="500"/>
 
 * Using the correct keys, I realized there is a logged in and a non-logged in experience when I hovered over the key where a popover indicated, that the documentation would be customized with my own keys. So I set out to create an account. I wondered aloud if getting my keys could be a step of its own. 
 
