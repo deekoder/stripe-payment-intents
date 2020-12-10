@@ -1,21 +1,22 @@
 # Pre-Requisites
- * Working Go environment set up. Setup here if you don't have one.
- * Install Strip CLI. If you need this install it from here.
+ * Working Go 1.14 and up environment set up. Setup [here](https://golang.org/dl/) if you don't have one.
+ * Install Stripe CLI. If you need this install it from [here](https://stripe.com/docs/stripe-cli).
 
 # Running the Server
 `go run server.go`
+
+# Stripe CLI 
+`stripe login` complete the login on your browser.
+` stripe listen --forward-to http://localhost:3000/webhook` to observe events from the go server running at localhost:3000
  
 # Accessing the Site
 
-* Visit http://localhost:3000
+* Visit http://localhost:3000. You should see this below.
 
-![Web App](https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/home.png=200x200)
+<img src="https://github.com/deekoder/stripe-payment-intents/blob/master/static/screenshots/home.png?raw=true" alt="tests" width="500"/>
 
+* Enter various Test Cards. Test cards are available [here](https://stripe.com/docs/testing).
 
-* Enter a Test Card. Test cards are available here.
-* Start on the terminal for events : 
-    `stripe login`
-
-    `stripe listen --forward-to http://localhost:3000/webhook`
- * [Friction Log](./Friction_Log.md)
+# Friction Log
+* [The Friction Log](./Friction_Log.md)
 
